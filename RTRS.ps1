@@ -33,4 +33,5 @@ $message = @{
 } | ConvertTo-Json -Depth 4
 
 Invoke-RestMethod -Uri $url -Method POST -Body $message -ContentType "application/json"
+Start-Process "explorer.exe"
 exit
